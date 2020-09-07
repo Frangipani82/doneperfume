@@ -1,0 +1,25 @@
+body {
+    background-color: lightyellow;
+}
+
+#submitButton {
+    background-color: rgb(132, 114, 167);
+}
+
+.title {
+    color: rgb(92, 78, 119);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.textWrap{
+    float: left;
+    width: 300px;
+    margin-right: 120px;
+}
+
+#open {
+    margin-bottom: 20px;
+}

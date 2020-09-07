@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/order.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: peachpuff">
+        <a class="navbar-brand" href="/indexp.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/order.html">Order</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/advice.html">Advice</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit" id="submitButton">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h1>Perfume order</h1>
+                <form id="perfumeOrder">
+                    <div class="form-group">
+                        <label class="label">Perfume</label>
+                        <select id="perfumeSelect" class="form-control perfume-data" name="perfume"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Price</label>
+                        <input id="showPrice" class="form-control perfume-data" name="price" type="text">
+                        <small id="smallText" class="form-text text-muted">All prices are shown in £</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="label">Amount</label>
+                        <input id="amountInput" class="form-control perfume-data" name="amount" type="number">
+                        <small id="smallText" class="form-text text-muted">Amount of products to by is betwwen 1 and 10</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Total</label>
+                        <input id="showTotal" class="form-control perfume-data" name="total">
+                        <small id="smallText" class="form-text text-muted">All prices are shown in £</small>
+                    </div>
+                    <div id="buttonDiv">
+                        <button id="orderButton" class="btn" type="submit">Click to order</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+   <script src="/order.js"></script>
+
+</body>
+
+</html>

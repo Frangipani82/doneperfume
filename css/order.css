@@ -1,0 +1,61 @@
+#submitButton {
+    background-color: rgb(145, 115, 206);
+}
+
+#orderButton {
+    background-color: rgb(92, 78, 119);
+    color: white;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body::before {
+    background-image: url("/img/perfume-chopard.jpg");
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+h1{
+    text-align: center;
+    color: rgb(92, 78, 119);
+    margin-bottom: 30px;
+}
+
+.container {
+    margin-top: 40px;
+    position: relative;
+}
+
+.label {
+    color: rgb(92, 78, 119);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#buttonDiv {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+#smallText {
+    color: rgb(92, 78, 119);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
